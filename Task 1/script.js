@@ -16,7 +16,7 @@ function getWeight(event) {
   event.preventDefault();
 
   const kilogramai = document.getElementById("search").value;
-  console.log(kilogramai);
+
   document.getElementById("weight-table").style.display = "block";
 
   document.getElementById("svarai-value").innerHTML = kilogramai * 2.2046;
