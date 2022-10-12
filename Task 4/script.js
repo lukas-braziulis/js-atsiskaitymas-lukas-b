@@ -12,18 +12,18 @@ turėti bent minimalų stilių ir būti responsive;
 const ENDPOINT = "cars.json";
 
 let carList = {};
-function fetchedData(robots) {
+function fetchedData(data) {
   const outputResult = document.getElementById("output");
-  for (let i = 0; i < robots.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     const container = document.createElement("div");
     const carBrand = document.createElement("h2");
     const carModel = document.createElement("p");
 
-    carBrand.innerText = robots[i].brand;
+    carBrand.innerText = data[i].brand;
 
     carBrand.className = "brandContainer";
     container.className = "bendrasContainer";
-    carModel.innerText = robots[i].models;
+    carModel.innerText = data[i].models;
 
     container.append(carBrand);
     container.append(carModel);
